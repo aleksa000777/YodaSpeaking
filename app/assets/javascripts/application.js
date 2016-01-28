@@ -19,3 +19,4 @@
 //= require ./services/servises.js
 //= require ./services/newText/thirdAPI.js
 //= require ./services/newText/yodaAPI.js
+//= require ./voiceController.js
