@@ -21,7 +21,12 @@ ctrl.factory("yodaTextResource", ['$http', function($http){
       console.log(output);
       return output;
     }, function(){
-      throw new Error("Errorrrrrrr");
+      $http.get('/api/yodas').then(function(response){
+      var data = response.data;
+      var item = data.text[Math.floor(Math.random()*data.text.length)];
+      console.log(item, 'random');
+      return item.output
+  })
     });
   }
 

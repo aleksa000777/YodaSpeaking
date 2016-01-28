@@ -2,12 +2,15 @@
   <h1>Welcome to yoda</h1>
   <div>
     <p><a ng-click="getYodaText(text.input)" role="button">yoda it</a></p>
+    <p><a ng-click="clean()" role="button">start again</a></p>
+
   </div>
   <form>
     <input type="text" ng-model="text.input" value="" placeholder="...write here">
-    <input type="text" ng-model="text.output">
-  </form>
+    <!-- <input type="text" ng-model="text.output" > -->
 
+  </form>
+{{ text.output }}
 
 
   </div>
@@ -18,5 +21,5 @@
     <input type="button" ng-click='try()' value="TRY" class='button'>
   </form>
   <p id="fun">{{quote}}</p>
-  
+  {{random}}
   </div>

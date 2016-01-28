@@ -1,7 +1,7 @@
 class Api::YodasController < ApplicationController
   def index
     dbPhrases = Yoda.all
-    render json: {phrases: dbPhrases}
+    render json: {text: dbPhrases}
   end
 
   def create
@@ -11,7 +11,7 @@ class Api::YodasController < ApplicationController
 
   private
   def phrase_params
-    params.require(:phrases).permit(:input, :output, :name)
+    params.require(:text).permit(:input, :output, :name)
   end
 
 

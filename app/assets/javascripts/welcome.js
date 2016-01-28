@@ -9,9 +9,22 @@ ngApp.controller("angularController", ['$scope', '$http','yodaTextService', func
     output:""
   };
 
+
+$scope.clean = function(){
+  $scope.text = {
+    input:"",
+    output:""
+  };
+}
+
   $scope.getYodaText = function(text){
     yodaTextService.yodaTalks(text).then(function(response){
       $scope.text.output = response.data;
+      $http.post('/api/yodas', {text: $scope.text}).then(function(res){
+
+        var data = res.data;
+      });
+
       if ('speechSynthesis' in window) {
         var msg = new SpeechSynthesisUtterance();
         var voices = window.speechSynthesis.getVoices();
@@ -28,10 +41,11 @@ ngApp.controller("angularController", ['$scope', '$http','yodaTextService', func
         };
 
         speechSynthesis.speak(msg);
-        var audio = new Audio();
-        audio.src ='http://translate.google.com/translate_tts?ie=utf-8&tl=en&q=Hello%20World.';
-        audio.play();
+
 }
+
+
+
 
     });
   };
