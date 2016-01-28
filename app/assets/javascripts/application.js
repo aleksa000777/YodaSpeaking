@@ -12,5 +12,10 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
-//= require_tree .
+// = require_tree .
+
+//= require ./scripts.js
+//= require ./app.js
+//= require ./services/servises.js
+//= require ./services/newText/thirdAPI.js
+//= require ./services/newText/yodaAPI.js
