@@ -1,0 +1,162 @@
+/* line 4, /Users/aleksa/code/wdi/Yoda/YodaSpeaking/app/assets/stylesheets/welcome.scss */
+body {
+  background-image: url("http://premiumwallpaperfree.com/wp-content/uploads/Star-Wars-7-Wallpaper-Desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  font-family: "Share Tech Mono";
+}
+
+/* line 11, /Users/aleksa/code/wdi/Yoda/YodaSpeaking/app/assets/stylesheets/welcome.scss */
+.navbar {
+  color: white;
+  text-align: center;
+  padding-right: 150px;
+}
+
+/* line 17, /Users/aleksa/code/wdi/Yoda/YodaSpeaking/app/assets/stylesheets/welcome.scss */
+.box {
+  border: 2px solid #a1a1a1;
+  padding: 10px 40px;
+  background: #dddddd;
+  border-radius: 25px;
+  position: absolute;
+  width: 500px;
+  height: 290px;
+  background-image: url("http://cdn.desktopwallpapers4.me/wallpapers/abstract/2560x1600/2/14578-green-gradient-2560x1600-abstract-wallpaper.jpg");
+  left: 25%;
+  color: white;
+}
+
+/* line 29, /Users/aleksa/code/wdi/Yoda/YodaSpeaking/app/assets/stylesheets/welcome.scss */
+.title {
+  text-align: center;
+  width: 300px;
+  margin: 0 auto;
+}
+
+/* line 34, /Users/aleksa/code/wdi/Yoda/YodaSpeaking/app/assets/stylesheets/welcome.scss */
+.box-input {
+  text-align: center;
+  margin: 30px auto;
+}
+
+/* line 39, /Users/aleksa/code/wdi/Yoda/YodaSpeaking/app/assets/stylesheets/welcome.scss */
+.rule {
+  margin: 10px 30px;
+}
+
+/* line 42, /Users/aleksa/code/wdi/Yoda/YodaSpeaking/app/assets/stylesheets/welcome.scss */
+.oval {
+  top: 400px;
+  left: 320px;
+  position: absolute;
+  width: 420px;
+  height: 160px;
+  border-radius: 50%;
+  border: 2px solid #a1a1a1;
+  background-image: url("https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTt8CPEP2aJbY1V81dQ1jbzqpBeQmS_T0KLssi_wqC7Kotg-n3G");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 55, /Users/aleksa/code/wdi/Yoda/YodaSpeaking/app/assets/stylesheets/welcome.scss */
+.small-oval {
+  top: 490px;
+  left: 740px;
+  position: absolute;
+  width: 50px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid #a1a1a1;
+  background-image: url("https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTt8CPEP2aJbY1V81dQ1jbzqpBeQmS_T0KLssi_wqC7Kotg-n3G");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 68, /Users/aleksa/code/wdi/Yoda/YodaSpeaking/app/assets/stylesheets/welcome.scss */
+.xs-oval {
+  top: 520px;
+  left: 800px;
+  position: absolute;
+  width: 20px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid #a1a1a1;
+  background-image: url("https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTt8CPEP2aJbY1V81dQ1jbzqpBeQmS_T0KLssi_wqC7Kotg-n3G");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 81, /Users/aleksa/code/wdi/Yoda/YodaSpeaking/app/assets/stylesheets/welcome.scss */
+#yoda {
+  position: absolute;
+  left: 800px;
+  top: 460px;
+}
+
+/* line 86, /Users/aleksa/code/wdi/Yoda/YodaSpeaking/app/assets/stylesheets/welcome.scss */
+#loading {
+  display: none;
+  position: absolute;
+  top: 503px;
+  left: 360px;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+/* line 94, /Users/aleksa/code/wdi/Yoda/YodaSpeaking/app/assets/stylesheets/welcome.scss */
+#loading img {
+  margin-top: 15px;
+  width: 200px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+/* line 100, /Users/aleksa/code/wdi/Yoda/YodaSpeaking/app/assets/stylesheets/welcome.scss */
+.result {
+  position: fixed;
+  top: 430px;
+  left: 360px;
+  text-align: center;
+  z-index: 99;
+  width: 340px;
+  height: 90px;
+}
+
+/* line 110, /Users/aleksa/code/wdi/Yoda/YodaSpeaking/app/assets/stylesheets/welcome.scss */
+.input {
+  position: fixed;
+  top: 400px;
+  left: 360px;
+  font-size: 1.2em;
+}
+
+/* line 118, /Users/aleksa/code/wdi/Yoda/YodaSpeaking/app/assets/stylesheets/welcome.scss */
+.quote {
+  top: 330px;
+  margin-left: 460px;
+  font-size: 1.2em;
+  color: black;
+}
+
+/* line 126, /Users/aleksa/code/wdi/Yoda/YodaSpeaking/app/assets/stylesheets/welcome.scss */
+.textinput {
+  color: black;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+

@@ -86,15 +86,16 @@ body {
 #loading{
   display: none;
   position: absolute;
-  top:510px;
+  top:503px;
   left: 360px;
   text-align: center;
   font-size: 1.2em;
 }
 #loading img{
-  margin-top: 20px;
-  width: 70px;
-  height: 70px;
+  margin-top: 15px;
+  width: 200px;
+  height: 150px;
+  border-radius: 50%;
 }
 .result{
   position: fixed;
@@ -103,19 +104,19 @@ body {
   text-align: center;
   z-index: 99;
   width: 340px;
-  height: 100px;
+  height: 90px;
   // background-color: lightblue;
 }
 .input{
   position: fixed;
-  top:450px;
+  top:400px;
   left: 360px;
   font-size: 1.2em;
 
   // background-color: lightblue;
 }
 .quote{
-  top:360px;
+  top:330px;
   margin-left: 460px;
   font-size: 1.2em;
   color:black;
