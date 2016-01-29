@@ -12,7 +12,7 @@ speek.controller("voiceController", ['$scope','$http','yodaTextService', functio
   };
   $scope.try=function(){
     $('#loading').show();
-  
+
 
     $scope.quote='';
     $http.get(URL, configHeaders).then(function(response){

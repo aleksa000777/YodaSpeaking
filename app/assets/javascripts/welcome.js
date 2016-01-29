@@ -19,8 +19,6 @@ $scope.clean = function(){
 
   $scope.getYodaText = function(text){
     $('#loading').show();
-    
-    // $('.quote').toggle();
     yodaTextService.yodaTalks(text).then(function(response){
       $scope.text.output = response.data;
       $http.post('/api/yodas', {text: $scope.text}).then(function(res){

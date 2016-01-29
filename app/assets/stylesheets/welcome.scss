@@ -1,17 +1,30 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  background-image: url('http://premiumwallpaperfree.com/wp-content/uploads/Star-Wars-7-Wallpaper-Desktop.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  font-family: 'Share Tech Mono', ;
+}
 .navbar{
   color: white;
   text-align: center;
+  padding-right: 150px;
 }
 
 .box{
+  border: 2px solid #a1a1a1;
+   padding: 10px 40px;
+   background: #dddddd;
+   border-radius: 25px;
   position: absolute;
   width: 500px;
-  height: 280px;
-  background-color: green;
+  height: 290px;
+  background-image: url('http://cdn.desktopwallpapers4.me/wallpapers/abstract/2560x1600/2/14578-green-gradient-2560x1600-abstract-wallpaper.jpg');
   left: 25%;
+  color:white;
 }
 .title{
   text-align: center;
@@ -32,8 +45,12 @@
   position: absolute;;
   width: 420px;
   height: 160px;
-  background: #a84909;
+  // background: rgba(184, 162, 149, 0.6);;
   border-radius: 50%;
+  border: 2px solid #a1a1a1;
+  background-image: url('https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTt8CPEP2aJbY1V81dQ1jbzqpBeQmS_T0KLssi_wqC7Kotg-n3G');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .small-oval{
   top:490px;
@@ -41,8 +58,12 @@
   position: absolute;;
   width: 50px;
   height: 30px;
-  background: #a84909;
+  // background: #a84909;
   border-radius: 50%;
+  border: 2px solid #a1a1a1;
+  background-image: url('https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTt8CPEP2aJbY1V81dQ1jbzqpBeQmS_T0KLssi_wqC7Kotg-n3G');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .xs-oval{
   top:520px;
@@ -50,8 +71,12 @@
   position: absolute;;
   width: 20px;
   height: 10px;
-  background: #a84909;
+  // background: #a84909;
   border-radius: 50%;
+  border: 2px solid #a1a1a1;
+  background-image: url('https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTt8CPEP2aJbY1V81dQ1jbzqpBeQmS_T0KLssi_wqC7Kotg-n3G');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 #yoda{
   position: absolute;
@@ -61,12 +86,13 @@
 #loading{
   display: none;
   position: absolute;
-  top:440px;
+  top:510px;
   left: 360px;
   text-align: center;
-  font-size: 1.1em;
+  font-size: 1.2em;
 }
 #loading img{
+  margin-top: 20px;
   width: 70px;
   height: 70px;
 }
@@ -82,6 +108,20 @@
 }
 .input{
   position: fixed;
-  top:90px;
-  left: 90px;
+  top:450px;
+  left: 360px;
+  font-size: 1.2em;
+
+  // background-color: lightblue;
+}
+.quote{
+  top:360px;
+  margin-left: 460px;
+  font-size: 1.2em;
+  color:black;
+  // background-color: red;
+}
+
+.textinput{
+  color: black;
 }
