@@ -5,13 +5,13 @@
 </div>
 <div class="container">
   <div class="content">
-  <div class="box">
-    <div class="title">
-      <h2>Speak like Yoda...</h2>
-      <p>Type the sentence and, get the power of space, you will.  Yeesssssss.</p>
-    </div>
       <div ng-controller="angularController">
-        <div class="box-input">
+        <div class="box">
+          <div class="title">
+            <h2>Speak like Yoda...</h2>
+            <p>Type the sentence and, get the power of space, you will.  Yeesssssss.</p>
+          </div>
+            <div class="box-input">
 
               <form class="textinput">
                 <textarea rows="2" cols="40" ng-model="text.input" value=""></textarea>
@@ -20,27 +20,31 @@
               <a ng-click="clean()" role="button" class="btn btn-default rule">CLEAR</a></p>
               <p>…or click on me…</p>
 
-        </div>
-        <p class='result input'>{{ text.output }}</p>
+            </div>
+            <div class="oval-result">
+              <div class="oval">
+                <p class='result input'>{{ text.output }}</p>
+              </div>
+              <div class="small-oval"></div>
+              <div class="xs-oval"></div>
+            </div>
+          </div>
       </div>
+    </div>
+
+      <div ng-controller="voiceController">
+        <a ng-click="try()"><img id="yoda" ng-src="http://iconbug.com/data/6e/256/b71780d3efbab83453c22bef565a35a0.png"  /></a>
+        <p class="result quote">{{quote}}</p>
+      </div>
+
+
+      <div id="loading">
+        <p>PATIENCE YOU MUST HAVE my young padawan</p>
+        <img ng-src="http://pixeljoint.com/files/icons/full/darth_vader_animation_1.gif"  />
+      </div>
+
   </div>
 
 
 
-  <div ng-controller="voiceController">
-    <a ng-click="try()"><img id="yoda" ng-src="http://iconbug.com/data/6e/256/b71780d3efbab83453c22bef565a35a0.png"  /></a>
-    <p class="result quote">{{quote}}</p>
-  </div>
-
-  <div class="oval"></div>
-  <div class="small-oval"></div>
-  <div class="xs-oval"></div>
-
-
-
-  <div id="loading">
-    <p>PATIENCE YOU MUST HAVE my young padawan</p>
-    <img ng-src="http://pixeljoint.com/files/icons/full/darth_vader_animation_1.gif"  />
-  </div>
-  </div>
 </div> <!--container -->
