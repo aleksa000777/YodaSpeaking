@@ -1,3 +1,87 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.navbar{
+  color: white;
+  text-align: center;
+}
+
+.box{
+  position: absolute;
+  width: 500px;
+  height: 280px;
+  background-color: green;
+  left: 25%;
+}
+.title{
+  text-align: center;
+  width: 300px;
+  margin: 0 auto;
+}
+.box-input{
+  text-align: center;
+  margin: 30px auto;
+}
+
+.rule{
+  margin: 10px 30px;
+}
+.oval {
+  top:400px;
+  left:320px;
+  position: absolute;;
+  width: 420px;
+  height: 160px;
+  background: #a84909;
+  border-radius: 50%;
+}
+.small-oval{
+  top:490px;
+  left:740px;
+  position: absolute;;
+  width: 50px;
+  height: 30px;
+  background: #a84909;
+  border-radius: 50%;
+}
+.xs-oval{
+  top:520px;
+  left:800px;
+  position: absolute;;
+  width: 20px;
+  height: 10px;
+  background: #a84909;
+  border-radius: 50%;
+}
+#yoda{
+  position: absolute;
+  left:800px;
+  top:460px;
+}
+#loading{
+  display: none;
+  position: absolute;
+  top:440px;
+  left: 360px;
+  text-align: center;
+  font-size: 1.1em;
+}
+#loading img{
+  width: 70px;
+  height: 70px;
+}
+.result{
+  position: fixed;
+  top:430px;
+  left: 360px;
+  text-align: center;
+  z-index: 99;
+  width: 340px;
+  height: 100px;
+  // background-color: lightblue;
+}
+.input{
+  position: fixed;
+  top:90px;
+  left: 90px;
+}

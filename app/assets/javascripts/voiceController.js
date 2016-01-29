@@ -11,14 +11,19 @@ speek.controller("voiceController", ['$scope','$http','yodaTextService', functio
     }
   };
   $scope.try=function(){
+    $('#loading').show();
+  
+
+    $scope.quote='';
     $http.get(URL, configHeaders).then(function(response){
+
       data = response.data;
       console.log(data.quote,"      before ");
 
       yodaTextService.yodaTalks(data.quote).then(function(response){
+        $('#loading').hide();
         $scope.quote = response.data;
-        // msg = new SpeechSynthesisUtterance(response.data);
-        // window.speechSynthesis.speak(msg);
+
         var msg = new SpeechSynthesisUtterance();
         var voices = window.speechSynthesis.getVoices();
         msg.voice = voices[16]; // Note: some voices don't support altering params

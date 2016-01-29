@@ -1,1 +1,1 @@
-var services = angular.module('services',['puppiesApiFactory','yodaApiFactory',]);
+var services = angular.module('services',['puppiesApiFactory','yodaApiFactory']);
